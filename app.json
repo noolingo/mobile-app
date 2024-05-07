@@ -21,10 +21,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "windowSoftInputMode": "stateVisible",
+      "package": "com.bai1emos.noolingo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "022dade4-15a3-4af5-a34d-3e57927a81aa"
+      }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts" : [
+            "./assets/fonts/Cygre-ExtraBold.ttf",
+            "./assets/fonts/Cygre-Regular.ttf" ]
+        }
+      ]
+    ]
   }
 }
