@@ -12,7 +12,7 @@ export default function SignUpScreen() {
         <SafeAreaView className = "flex-1 justify-end items-center w-full bg-grey">
 
             <View className = "flex-1 justify-center items-center w-full">
-                <Text className = "text-center  text-accent_1" style = {[fontStyles.CygreExtraBold, {fontSize:60}]}>Sign up</Text>
+                <Text className = "text-center text-5xl text-accent_1" style = {[fontStyles.CygreExtraBold]}>Регистрация</Text>
             </View>
 
             {isLoading? 
@@ -20,7 +20,7 @@ export default function SignUpScreen() {
                 <ActivityIndicator size={"large"} className = 'my-32'/> 
             </View>
             :
-            <View  className = " justify-start items-center bg-white w-full h-3/4 r-5 rounded-tr-3xl r-5 rounded-tl-3xl" > 
+            <View  className = " justify-start pt-10 items-center bg-white w-full h-3/4 r-5 rounded-tr-3xl r-5 rounded-tl-3xl" > 
                 <SignUpForm setIsLoading = {setIsLoading} />
             </View>
             }   

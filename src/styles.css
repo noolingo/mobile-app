@@ -1,0 +1,9 @@
+@config "../noolingo/tailwind.config.js?"
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-bg {
+  @apply flex-1 justify-around items-center bg-primary;
+}

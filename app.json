@@ -37,11 +37,13 @@
       [
         "expo-font",
         {
-          "fonts" : [
+          "fonts": [
             "./assets/fonts/Cygre-ExtraBold.ttf",
-            "./assets/fonts/Cygre-Regular.ttf" ]
+            "./assets/fonts/Cygre-Regular.ttf"
+          ]
         }
-      ]
+      ],
+      "expo-secure-store"
     ]
   }
 }

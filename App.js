@@ -1,9 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import { useMemo, useState } from 'react';
 import AppNavigation from './AppNavigation';
 import { UserDTOContext } from './UserDTOContext';
-import { SettingsContext } from './Contexts/SettingsContext';
+import { SettingsContext } from './contexts/SettingsContext';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { PaperProvider } from 'react-native-paper';
+
+
 
 export default function App() {
 
@@ -30,7 +32,9 @@ export default function App() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <SettingsContext.Provider value={settingsValue}>
         <UserDTOContext.Provider value = {userDTOvalue}>
-          <AppNavigation/>
+          <PaperProvider>
+            <AppNavigation/>
+          </PaperProvider>
         </UserDTOContext.Provider>
       </SettingsContext.Provider>
     </GestureHandlerRootView>
